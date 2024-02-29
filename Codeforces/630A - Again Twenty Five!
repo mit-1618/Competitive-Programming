@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define endl '\n'
+#define int long long
+const int MOD = 1e9 + 7;
+const int INF = LLONG_MAX >> 1;
+signed main() {
+
+    // int n; cin>>n; // n is the input power for 5^n
+    // int multiplier=5;
+    // int num=1;
+    // for(int i=0;i<n;i++){
+    //     num*=multiplier;
+    // }
+    // cout<<num%100;
+    // return 0;
+    cout<<25;
+
+}
