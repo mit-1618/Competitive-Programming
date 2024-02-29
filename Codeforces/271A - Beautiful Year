@@ -1,0 +1,45 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define endl '\n'
+#define int long long
+const int MOD = 1e9 + 7;
+const int INF = LLONG_MAX >> 1;
+signed main() {
+
+    int year; cin>>year;
+    int digits=0,temp=year;
+    int a,b,c,d,e;
+    while(temp){
+        temp=temp/10;
+        digits++;
+    }
+    if(digits==4){
+            while(year++){
+                a=year/1000%10;
+                b=year/100%10;
+                c=year/10%10;
+                d=year%10;
+                if(a!=b && a!=c && a!=d && b!=c && b!=d && c!=d){
+                    break;
+                }
+            }   
+    }   
+    else {
+            while(year++){
+            a=year/10000%10;
+            b=year/1000%10;
+            c=year/100%10;
+            d=year/10%10;
+            e=year%10;  
+            if(a!=b && a!=c && a!=d && a!=e && b!=c && b!=d && b!=e && c!=d && c!=e && d!=e){
+                    break;
+            }
+            }
+
+    }
+
+
+
+    cout<<year;
+    return 0;
+}
